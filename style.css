@@ -45,6 +45,24 @@ nav .logo {
   color: var(--color-text);
 }
 
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-social a {
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.nav-social a:hover,
+.nav-social a:focus {
+  color: var(--color-accent);
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -67,6 +85,13 @@ nav a:focus {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 3rem 1rem;
+  scroll-margin-top: 5rem;
+}
+
+/* Full-width sections also need scroll offset */
+.experience-section,
+.volunteering-section {
+  scroll-margin-top: 5rem;
 }
 
 /* Hero */
@@ -357,6 +382,20 @@ h2 { font-size: 1.5rem; }
   color: var(--color-muted);
   margin-top: 0.5rem;
   line-height: 1.6;
+}
+
+.org-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.org-link:hover,
+.org-link:focus {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
@@ -662,6 +701,9 @@ footer a:hover {
   nav {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  .nav-social {
+    gap: 1rem;
   }
   nav ul {
     flex-wrap: wrap;
