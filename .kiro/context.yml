@@ -1,0 +1,25 @@
+# .kiro context configuration
+project_name: "Jefferson Richards Personal Website"
+domain: "jeffersonrichards.com"
+hosting: "GitHub Pages"
+purpose: "A public-facing portfolio and resume mirroring LinkedIn public data, accessible without a LinkedIn account."
+
+design_system:
+  colors:
+    primary: "#8A2BE2" # Purple
+    background: "#0a0a0a" # Black/Dark Gray
+    text_light: "#ffffff"
+    text_muted: "#a3a3a3"
+  typography: "Clean, modern sans-serif (e.g., Inter or Roboto)"
+  layout: "Mobile-first, responsive grid/flexbox. Must look excellent on phones."
+
+metadata_and_seo:
+  title: "Jefferson Richards - Personal Profile & Resume"
+  og_image: "profile-photo.jpg" # Extracted from LinkedIn Rich Media
+  description: "Professional portfolio, projects, and work experience for Jefferson Richards."
+
+data_handling_rules:
+  - NEVER commit raw LinkedIn CSV files to version control.
+  - Parse data locally from the following files: Profile.csv, Positions.csv, Education.csv, Projects.csv, Volunteer Experience.csv, Skills.csv.
+  - IGNORE and NEVER read or parse: Messages.csv, Connections.csv, Invitations.csv, Contacts.csv.
+  - Extract rich media URLs and text links from the CSVs to create clickable elements in the UI.

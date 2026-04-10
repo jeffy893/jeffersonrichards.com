@@ -1,0 +1,13 @@
+# .gitignore
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Ignore the raw LinkedIn export folder and all its contents
+linkedin_export/
+
+# Ignore all CSV files (LinkedIn data includes Messages, Connections, etc.)
+*.csv
+
+# Allow specific processed web assets
+!data.json
