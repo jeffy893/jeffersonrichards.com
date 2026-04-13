@@ -515,7 +515,18 @@ h2 { font-size: 1.5rem; }
 }
 
 /* Skills */
-.skills-cloud {
+
+/* Watch or Listen */
+.watch-listen-section {
+  text-align: center;
+}
+
+.media-embed {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Skills Cloud */
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
