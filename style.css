@@ -527,6 +527,7 @@ h2 { font-size: 1.5rem; }
 }
 
 /* Skills Cloud */
+.skills-cloud {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
