@@ -85,13 +85,13 @@ nav a:focus {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 3rem 1rem;
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 6rem;
 }
 
 /* Full-width sections also need scroll offset */
 .experience-section,
 .volunteering-section {
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 6rem;
 }
 
 /* Hero */
