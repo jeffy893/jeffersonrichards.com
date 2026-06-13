@@ -63,10 +63,62 @@ nav .logo {
   color: var(--color-accent);
 }
 
-nav ul {
+nav ul,
+nav .nav-sections {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 0;
+  align-items: center;
+}
+
+nav .nav-sections li {
+  position: relative;
+  padding: 0 1rem;
+}
+
+nav .nav-sections li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 1.2em;
+  background: linear-gradient(180deg, #0a66c2, #7b1fa2);
+  border-radius: 1px;
+  opacity: 0.5;
+}
+
+nav .nav-sections li a {
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+
+nav .nav-sections li a:hover,
+nav .nav-sections li a:focus {
+  background: rgba(10, 102, 194, 0.08);
+}
+
+nav .nav-sections li .nav-constitution {
+  background: linear-gradient(135deg, #0a66c2 0%, #7b1fa2 50%, #e91e63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+nav .nav-sections li .nav-constitution:hover,
+nav .nav-sections li .nav-constitution:focus {
+  background: linear-gradient(135deg, #0a66c2 0%, #7b1fa2 50%, #e91e63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.8;
 }
 
 nav a {
@@ -514,11 +566,25 @@ h2 { font-size: 1.5rem; }
   background: #4a148c;
 }
 
-/* Major Section Dividers — WHAT IS / WHAT HAS BEEN / WHAT WILL BE */
+/* Major Section Dividers — WHAT IS / WHAT HAS BEEN / WHAT WILL HAVE BEEN / CONSTITUTION */
 .section-divider {
   text-align: center;
-  padding: 3.5rem 1rem 2rem;
+  padding: 4rem 1rem 2.5rem;
   position: relative;
+  margin-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #0a66c2, #7b1fa2, #e91e63);
+  border-radius: 2px;
 }
 
 .section-divider h2 {
@@ -549,6 +615,9 @@ h2 { font-size: 1.5rem; }
   .section-divider h2 {
     font-size: 2rem;
     letter-spacing: 0.05em;
+  }
+  .section-divider {
+    padding: 3rem 1rem 2rem;
   }
 }
 
@@ -754,6 +823,20 @@ footer a:hover {
   }
   .nav-social {
     gap: 1rem;
+  }
+  nav .nav-sections {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+  nav .nav-sections li {
+    padding: 0 0.6rem;
+  }
+  nav .nav-sections li::after {
+    display: none;
+  }
+  nav .nav-sections li a {
+    font-size: 0.8rem;
   }
   nav ul {
     flex-wrap: wrap;

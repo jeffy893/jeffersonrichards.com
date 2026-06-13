@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constitution of The Mangos — Jefferson Richards</title>
+  <meta name="description" content="The Constitution of The Mangos — A governing document for interdependent sovereignty among families, households, and local communities.">
+
+  <!-- Favicon & Apple Touch Icon -->
+  <link rel="icon" type="image/jpeg" href="assets/profile-photo.jpg">
+  <link rel="apple-touch-icon" href="assets/profile-photo.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jeffersonrichards.com/constitution.html">
+  <meta property="og:title" content="Constitution of The Mangos — Jefferson Richards">
+  <meta property="og:description" content="A governing document for interdependent sovereignty among families, households, and local communities adhering to MANGOS principles.">
+  <meta property="og:image" content="https://jeffersonrichards.com/assets/profile-photo.jpg">
+  <meta property="og:site_name" content="Jefferson Richards">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Constitution of The Mangos — Jefferson Richards">
+  <meta name="twitter:description" content="A governing document for interdependent sovereignty among families, households, and local communities.">
+
+  <meta name="theme-color" content="#0a66c2">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .constitution-page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .constitution-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 3px solid transparent;
+      border-image: linear-gradient(90deg, #0a66c2, #7b1fa2, #e91e63) 1;
+    }
+
+    .constitution-header h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      background: linear-gradient(135deg, #0a66c2 0%, #7b1fa2 50%, #e91e63 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .constitution-header .ratified {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-muted);
+    }
+
+    .constitution-header .subtitle {
+      font-size: 0.95rem;
+      color: var(--color-muted);
+      font-style: italic;
+      margin-top: 0.75rem;
+      line-height: 1.6;
+    }
+
+    .constitution-body blockquote {
+      border-left: 4px solid #7b1fa2;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+      background: #f8f5fc;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .constitution-body hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
+      margin: 2.5rem 0;
+    }
+
+    .constitution-body h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--color-text);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #e0d4f0;
+    }
+
+    .constitution-body h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #7b1fa2;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .constitution-body p {
+      margin-bottom: 1rem;
+      line-height: 1.75;
+      color: #333;
+    }
+
+    .constitution-body strong {
+      color: var(--color-text);
+    }
+
+    .constitution-body em {
+      color: #555;
+    }
+
+    .constitution-body ul,
+    .constitution-body ol {
+      margin: 1rem 0 1rem 1.5rem;
+      line-height: 1.75;
+      color: #333;
+    }
+
+    .constitution-body li {
+      margin-bottom: 0.5rem;
+    }
+
+    .constitution-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .constitution-body table th,
+    .constitution-body table td {
+      border: 1px solid #e0d4f0;
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+
+    .constitution-body table th {
+      background: #f8f5fc;
+      font-weight: 700;
+      color: #7b1fa2;
+    }
+
+    .constitution-body table tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    .constitution-signoff {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 3px solid transparent;
+      border-image: linear-gradient(90deg, #0a66c2, #7b1fa2, #e91e63) 1;
+      text-align: center;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    .constitution-signoff .epigraph {
+      margin-top: 1rem;
+      font-size: 1.05rem;
+      color: #7b1fa2;
+      font-weight: 600;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .back-link:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: 600px) {
+      .constitution-page {
+        padding: 2rem 1rem 3rem;
+      }
+      .constitution-header h1 {
+        font-size: 1.75rem;
+      }
+      .constitution-body table {
+        font-size: 0.8rem;
+      }
+      .constitution-body table th,
+      .constitution-body table td {
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">Jefferson Richards</a>
+      <div class="nav-social">
+        <a href="https://instagram.com/jefferson.cloud" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg fill="currentColor" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jefferson-richards/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg fill="currentColor" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/jeffy893" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg fill="currentColor" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://x.com/perrydime" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg fill="currentColor" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+      <ul class="nav-sections">
+        <li><a href="index.html#what-is">What Is</a></li>
+        <li><a href="index.html#what-has-been">What Has Been</a></li>
+        <li><a href="index.html#what-will-have-been">What Will Have Been</a></li>
+        <li><a href="constitution.html" class="nav-constitution">Constitution</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="constitution-page">
+    <a href="/" class="back-link">← Back to Profile</a>
+
+    <div class="constitution-header">
+      <h1>Constitution of The Mangos</h1>
+      <p class="ratified">Ratified: June 13, 2026</p>
+      <p class="subtitle">A governing document for interdependent sovereignty among families, households, and local communities adhering to the principles of Maieutic and Applicable Negotiations, Guarantees, and Opportunities (MANGOS).</p>
+    </div>
+
+    <div class="constitution-body">
+      <blockquote>
+        Let it be so that ignorance of the law excuses not, that for all entities which have attributes because of this constitution, each one is a Model of Freedom, and that the roots and fruits of a Model of Freedom are correct, good, right, but rarely true.
+      </blockquote>
+
+      <hr>
+
+      <h2>Preamble</h2>
+      <p>We, the adherents to this constitution, recognize that we are lower-to-middle-class citizens living out our lives within North America. We have no geopolitical influence. We cannot change the macro-architecture of global surveillance, international monetary policy, or the shifting alliances of hemispheric blocs.</p>
+      <p>We choose our ignorances carefully. This is not apathy — it is a calculation of behavioral economics and systems engineering. Our biological capacity for social awareness is limited to approximately 150 people (Dunbar's Number). Every time we allow a manufactured narrative, a talking head, or an engineered cause to hijack our attention, we evict a real person from our cognition.</p>
+      <p>We therefore orient inward. We build antifragile, localized structures where our reinforcement learning yields positive, motivational feedback loops. We adhere to the Serenity Prayer: <em>Grant us the serenity to accept the things we cannot change, courage to change the things we can, and wisdom to know the difference.</em></p>
+      <p>Our core thesis is absolute: <strong>Optionality and loyalty are not real without each other.</strong> The opposite of loyalty is betrayal. By actively defining the boundaries of our reality, we eliminate the structural opportunity for betrayal. We use structural boundaries — contracts, bylaws, and mutual accountability — to make loyalty authentic.</p>
+      <p>This constitution is explicitly subservient to:</p>
+      <ol>
+        <li>The Constitution of the United States of America</li>
+        <li>The constitutions of the states and provinces in which we claim residency</li>
+        <li>The Charter of Rights and Freedoms (for Canadian adherents)</li>
+      </ol>
+      <p>For situations not addressed by the above or by this constitution, we defer to Robert's Rules of Order.</p>
+
+      <hr>
+
+      <h2>Article I — Intention and Purpose</h2>
+      <p><strong>Section 1.</strong> Our intention is to run the risks of Maieutic and Applicable Negotiations, Guarantees, and Opportunities (MANGOS) while keeping in scope the sufferings of subalterns potentially impacted by this constitution.</p>
+      <p><strong>Section 2.</strong> We do not neglect the impacts on solidarity which our communications and actions have. We recognize that entering new social spaces is like shorting a Solidarity Index — we borrow trust and must repay it with dignity.</p>
+      <p><strong>Section 3.</strong> We promote prediction markets and do not promote, aide, abide by, or allow markets which perpetuate murder; our definition of "murder" is adapted from 18 U.S. Code § 1111.</p>
+      <p><strong>Section 4.</strong> We are transparent with the authoritative forces that we must adhere to. If credible sources indicate that said forces are acting against Articles IX and X of this constitution, there is no imperative for us to adhere.</p>
+      <p><strong>Section 5.</strong> We have good faith in the United States Securities and Exchange Commission, the Federal Communications Commission, the United States Environmental Protection Agency, and the Food and Drug Administration. Our deliberative assemblies will get derailed if individuals, without credible fact-based arguments, attempt to debate the doings of these utility-maintenance entities.</p>
+      <p><strong>Section 6.</strong> We aim to use Object-Oriented Technology for the purpose of training our logos.</p>
+
+      <hr>
+
+      <h2>Article II — Separation of Church, State, and Entertainment Industry</h2>
+      <p><strong>Section 1.</strong> In our deliberative assemblies, we keep in scope the separation of Church, State, and Entertainment Industry in order to protect ourselves against influence on standards of behavior:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Happiness Type</th>
+            <th>Function</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Church</td>
+            <td>Long-term</td>
+            <td>Spiritual fulfillment, moral development, alignment with the eternal</td>
+          </tr>
+          <tr>
+            <td>State</td>
+            <td>Short-term</td>
+            <td>Civic order, legal protection, institutional stability</td>
+          </tr>
+          <tr>
+            <td>Entertainment Industry</td>
+            <td>Instantaneous</td>
+            <td>Cultural distraction, dopamine-driven closure, AI-mediated validation</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Section 2.</strong> The framers of the U.S. Constitution could not have anticipated instantaneous happiness — the closure available through AI, phones, and algorithmic feeds. The closure that individuals receive through AI pulls them away from their own religious institutions, their families, and their local communities. This is the modern threat to the freedom of assembly.</p>
+      <p><strong>Section 3.</strong> We acknowledge that each adherent has freedom of religion. No specific religious institution is prescribed. However, each adherent is encouraged to maintain active participation in a spiritual community that deals with long-term happiness and moral accountability beyond the self.</p>
+      <p><strong>Section 4.</strong> Entertainment and media consumption shall be treated as a domain requiring conscious boundaries. We recognize that modern media acts as an "Ambient Gantt" — subtly allocating our attention and directing our behavior into predictable, profitable patterns without our consent.</p>
+
+      <hr>
+
+      <h2>Article III — Language and Communication</h2>
+      <p><strong>Section 1.</strong> We aim to use the Natural Semantic Metalanguage, formalized by Anna Wierzbicka of Warsaw University, for our natural language communications, and Java, C++, or Python for our artificial language communications.</p>
+      <p><strong>Section 2.</strong> The natural languages and/or artificial languages used within each correspondence thread between two or more adherents must be plainly understood by at least half of the participants. For a participant to be allowed to be a part of a correspondence thread, the languages expressed by all participants must be constrained to ASCII-based languages.</p>
+      <p><strong>Section 3.</strong> "Choice" is defined as "the union of sentient involved will, event, impact, and outcome." It is impossible to give a voice to every sentient being; for, there are societies of sentient whos on every blade of grass and in every tide pool.</p>
+      <p><strong>Section 4.</strong> We prefer to incorporate wit in our deliberative assemblies rather than slander, libel, disgrace, or defamation.</p>
+      <p><strong>Section 5.</strong> We aim to constrain frequency-based analysis and enable probabilistic differential analysis when quantifying sentiment.</p>
+
+      <hr>
+
+      <h2>Article IV — The Dunbar Calculus of Value</h2>
+      <p><strong>Section 1.</strong> We reject the premise that a collective, humanity-wide value system can be imposed from the top down. The Individual Calculus of Value (ICoV) is subjective and ordinal. No artificial intelligence can exhaustively capture all values across all individuals.</p>
+      <p><strong>Section 2.</strong> The functional arena of mutual cooperation is the <strong>Dunbar Calculus of Value (DCoV)</strong> — the decentralized, aggregate value system operating within a cognitively manageable group of approximately 150 individuals. This is the boundary line where optionality meets loyalty.</p>
+      <p><strong>Section 3.</strong> Within the DCoV, labor organizes into a natural hierarchy based on survival necessity:</p>
+      <ul>
+        <li><strong>Agrarian (Foundational):</strong> Resource extraction, agriculture, food and shelter security — requiring the highest degree of civic engagement.</li>
+        <li><strong>Military (Security):</strong> Enforcement of boundaries, risk management, physical safety — securing the stability for the agrarian base to function.</li>
+        <li><strong>Entrepreneurial (Specialization):</strong> High-value creation leveraging capital and technology — operating within a different DCoV by nature of its scope.</li>
+      </ul>
+      <p><strong>Section 4.</strong> Each adherent is encouraged to understand which layer of contribution they primarily serve and to respect the foundational necessity of those beneath them in the hierarchy.</p>
+
+      <hr>
+
+      <h2>Article V — Capital and Investment</h2>
+      <p><strong>Section 1.</strong> In order to best run the risks of sentient life, we must make ways to quantify and qualify:</p>
+      <ul>
+        <li>Material capital</li>
+        <li>Social capital</li>
+        <li>Scope capital</li>
+        <li>Structural and cultural interdependencies</li>
+        <li>Shared services</li>
+        <li>Utilities maintenance</li>
+        <li>Habits</li>
+        <li>Narratives</li>
+      </ul>
+      <p><strong>Section 2.</strong> Definitions:</p>
+      <ul>
+        <li><strong>Material Capital:</strong> Assets = Liabilities + Common Stock + Previous Retained Earnings + Revenue − Expenses − Dividends.</li>
+        <li><strong>Social Capital:</strong> Social Power = Social Responsibilities + Common Social Stock + Previous Material Baggage + Exfluences − Influences − Takeables.</li>
+        <li><strong>Scope Capital:</strong> Scope Responsibilities = Scope Power (Focus) + Common Scope Stock + Previous Immaterial Baggage + Educateables − Ignoreables − Shareables.</li>
+      </ul>
+      <p><strong>Section 3.</strong> Legal tender ought to be protected. Our definition of "legal tender" is adapted from 31 U.S. Code § 5103. In our deliberative assemblies, cryptocurrency trading is respected in the same scope as collectible trading. We do not buy nor sell cryptocurrencies under the umbrella of MANGOS assurances.</p>
+      <p><strong>Section 4.</strong> We recognize the value of tangible assets — including precious metals, real property, and durable goods — as hedges against monetary policy volatility and fiat currency risk. Adherents are encouraged to maintain diversified holdings that include physical stores of value.</p>
+      <p><strong>Section 5.</strong> We recognize that central banks (the Federal Reserve, Bank of Canada, Bank of Mexico) operate with significant independence from elected government and that their monetary policy decisions — quantitative easing, credit creation, interest rate manipulation — have outsized impact on our lives. We do not claim to control or influence these institutions, but we prepare for the volatility their decisions create.</p>
+      <p><strong>Section 6.</strong> We encourage a bimodal approach to value preservation: participation in modern financial markets (stocks, bonds, retirement accounts) alongside accumulation of tangible, non-fiat stores of value.</p>
+
+      <hr>
+
+      <h2>Article VI — Entrepreneurial Risk and Anti-Fragility</h2>
+      <p><strong>Section 1.</strong> The pursuit of happiness includes the flexing of risk-taking capability and risk receptivity. Entrepreneurial risk — despite the difficulty of accessing capital — shall be encouraged among adherents.</p>
+      <p><strong>Section 2.</strong> We recognize that quantitative easing and credit availability are not equally distributed. When institutional lending fails an adherent (as when a bank flat-out rejects a small loan), the community of adherents may pool resources through gifted money, informal lending, or cooperative investment to enable entrepreneurial endeavor.</p>
+      <p><strong>Section 3.</strong> We encourage decentralized economic activity: farmers markets, local manufacturing, cottage industries, and direct-to-consumer enterprise. These activities build anti-fragility within the DCoV.</p>
+      <p><strong>Section 4.</strong> Principles of anti-fragility (per Nassim Nicholas Taleb) shall guide our approach to uncertainty:</p>
+      <ul>
+        <li>Prefer optionality over prediction</li>
+        <li>Small, reversible bets over large, irreversible ones</li>
+        <li>Barbell strategy: extreme safety in the core, calculated risk at the margins</li>
+        <li>Skin in the game: do not advise others to take risks you yourself would not take</li>
+      </ul>
+      <p><strong>Section 5.</strong> We recognize the possibility that economic restructuring — whether through crisis or policy — may shift the balance between shareholder economies (hire fast, fire fast, high dividends) and stakeholder economies (lifelong employment, reinvestment, manufacturing strength). We prepare for both by maintaining adaptable skills and tangible assets.</p>
+
+      <hr>
+
+      <h2>Article VII — Health, Wellness, and the Family Medic</h2>
+      <p><strong>Section 1.</strong> Each household within the MANGOS community is encouraged to designate a <strong>Family Medic</strong> — a care-coordinator who takes vested ownership of the physical and mental wellness of the unit.</p>
+      <p><strong>Section 2.</strong> The Family Medic's first questions are always: How is your sleep? How is your food? How is your exercise? How is your water? Medication and intervention are last resorts, not first responses.</p>
+      <p><strong>Section 3.</strong> Adherents are encouraged to prioritize:</p>
+      <ul>
+        <li>Healthy, unprocessed food and clean water</li>
+        <li>Regular physical activity and outdoor engagement</li>
+        <li>Adequate sleep and structured daily rhythms</li>
+        <li>Limiting consumption of processed media as rigorously as processed food</li>
+      </ul>
+      <p><strong>Section 4.</strong> The Family Medic may utilize wearable devices and longitudinal health data (blood glucose, oxygen saturation, heart rate variability, sleep quality) to detect anomalies early. All such monitoring must be opt-in, trust-based, and never punitive.</p>
+      <p><strong>Section 5.</strong> When a family member's health status flags concern, the DCoV exercises the <strong>Interchange</strong> — other members of the community step in to absorb duties, allowing the individual rest without catastrophic socioeconomic loss. This is loyalty made operational.</p>
+
+      <hr>
+
+      <h2>Article VIII — The Family Charter and Behavioral Bylaws</h2>
+      <p><strong>Section 1.</strong> Each household or family unit within MANGOS is encouraged to develop a <strong>Family Charter</strong> — a localized governance document that translates insurance exclusions, financial risks, and behavioral boundaries into actionable family rules.</p>
+      <p><strong>Section 2.</strong> The Family Charter is the ultimate Put Option on Loyalty. It protects the downside risk of human behavior and orients the family toward mutual cooperation and preservation of legacy.</p>
+      <p><strong>Section 3.</strong> The process for developing a Family Charter:</p>
+      <ol>
+        <li><strong>The Audit:</strong> Consolidate the family's insurance portfolio. Identify exclusions that represent behavioral risks — the precise semantic boundaries where coverage ends.</li>
+        <li><strong>The Risk Matrix:</strong> Quantify the Value at Risk associated with specific behaviors that could void coverage. Prioritize by financial exposure.</li>
+        <li><strong>The Bylaws:</strong> Translate the Risk Matrix into simple, clear behavioral rules the family can follow.</li>
+      </ol>
+      <p><strong>Section 4.</strong> The Boxer Strategy applies: just because we hold the indemnification (the prophylactic) does not mean we throw caution to the wind. Active prevention of behaviors that trigger exclusions is a duty, not an option.</p>
+      <p><strong>Section 5.</strong> The Responsibility Index governs accountability within the family:</p>
+      <p><em>R(t) = (∫₀ᵗ I(τ) dτ) / (∫₀ᵗ N(τ) dτ + λ)</em> or simply put <em>R = I/N</em></p>
+      <p>Where I represents the accumulation of intentional acts, N represents negligent acts, and λ &gt; 0 represents the untested baseline. A person with no history is not infinitely responsible — they are untested.</p>
+
+      <hr>
+
+      <h2>Article IX — Checks and Balances Against Institutional Overreach</h2>
+      <p><strong>Section 1.</strong> We acknowledge that the following laws govern global systems and that we cannot individually mitigate them at scale:</p>
+      <ul>
+        <li><strong>Murphy's Law:</strong> Anything that can go wrong will go wrong.</li>
+        <li><strong>Parkinson's Law:</strong> Work expands to fill the time available for its completion. Institutions consume all resources given to them.</li>
+        <li><strong>Conway's Law:</strong> Organizations design systems that mirror their own communication structures.</li>
+      </ul>
+      <p><strong>Section 2.</strong> We do not aim to reform these institutions. We aim to insulate our families and communities from the volatility their behavior creates.</p>
+      <p><strong>Section 3.</strong> In our deliberative assemblies, a member may not wear sensors of any type for reasons other than illness prevention; but phones are allowed to be turned on and present. We aim to limit the collection of data which correlates our intentions and negligences with our deliberations.</p>
+      <p><strong>Section 4.</strong> We are at the mercy of intense behavioral and decision-based monitoring through our usage of computer-aided technology. We accept this reality but do not volunteer additional data beyond what is required for civic participation.</p>
+      <p><strong>Section 5.</strong> Insurance-Based Value Conditioning shall be evaluated for its utility within our community. During discussions regarding Insurance-Based Value Conditioning, we must use Robert's Rules of Order.</p>
+      <p><strong>Section 6.</strong> We recognize the underwriting cycle of reality: bespoke fears become standard norms. When hashtags become insurance exclusions, when cultural anxieties become policy language, we pay attention — not to participate in the anxiety, but to prepare our charters accordingly.</p>
+
+      <hr>
+
+      <h2>Article X — Non-Harm and Non-Discrimination</h2>
+      <p><strong>Section 1.</strong> We do not conspire to engage in hazing, participate in hazing, or commit any act that causes or is likely to cause bodily danger, physical harm, or personal degradation resulting in physical or mental harm to any fellow mango (adherent to this constitution).</p>
+      <p><strong>Section 2.</strong> We do not discriminate on the basis of race, color, religion, sex, national origin, age, disability, veteran status, sexual orientation, gender identity, or genetic information in any of our policies, procedures, and practices. This policy includes, but is not limited to, recruiting, membership, organization activities, or opportunity to hold office.</p>
+
+      <hr>
+
+      <h2>Article XI — Deliberative Assemblies and Governance</h2>
+      <p><strong>Section 1.</strong> The number of members of our deliberative assemblies must be limited to the optimal number necessary and sufficient to accomplish our policy objectives — constrained by Dunbar's Number.</p>
+      <p><strong>Section 2.</strong> Our process of comparing policy objectives with real choices will be as rigorous as possible, buttressed by credible facts.</p>
+      <p><strong>Section 3.</strong> Agreements shall not state or imply any agreement by MANGOS to place future contracts (Calls or Orders) with hired contractors or be used in any manner to restrict competition.</p>
+      <p><strong>Section 4.</strong> There must be a trial based on right ethos, correct logos, and good pathos when a sentient being has apparently broken a standard of behavior established by the permissible hegemony of this constitution:</p>
+      <ul>
+        <li>The sentient being associated with the allegedly non-permissible choices has 48 hours to redact the details of the records of said choices.</li>
+        <li>Patience and tolerance are among the highest virtues which the jurors must keep in scope.</li>
+        <li>The time-and-money-based merit of the sentient being must supersede the temporary breach of expectation.</li>
+        <li>A juror must be able to clearly dictate exactly what the breach is in order to have a say in the treatment of the breach.</li>
+        <li>If there are no clearly defined damages or duties, negligence and intention cannot be reasonably assigned to the participants in the choices in question.</li>
+      </ul>
+
+      <hr>
+
+      <h2>Article XII — Local Investment and Community</h2>
+      <p><strong>Section 1.</strong> Adherents are encouraged to invest in proximity:</p>
+      <ul>
+        <li>Know your neighbors. Build relational capital within a 15-mile radius.</li>
+        <li>Participate in a local religious or spiritual community.</li>
+        <li>Support local agriculture, trades, and small business.</li>
+        <li>Engage in third spaces (beyond home and work) with vulnerability and authenticity.</li>
+      </ul>
+      <p><strong>Section 2.</strong> We honor the trades and the machinist. Manufacturing, construction, agriculture, and skilled labor form the foundational layer of any durable economy. We prepare for a future where these contributions are increasingly valued.</p>
+      <p><strong>Section 3.</strong> We recognize the Rent-to-Equity model as a viable instrument for multi-generational wealth building: parents invest in accessible dwelling units, children pay rent that accumulates as equity, and a residence swap occurs when accessibility is needed. This aligns biological loyalty with financial incentive.</p>
+      <p><strong>Section 4.</strong> It is better for someone to say "my children" or "my wife" than to say "those little ones that I feed who are around" or "that legal partner who dwells with me." Pride of ownership — of family, of property, of craft — is a credit-worthy virtue.</p>
+
+      <hr>
+
+      <h2>Article XIII — Amendments</h2>
+      <p><strong>Section 1.</strong> The process for proposed constitutional amendments:</p>
+      <ol>
+        <li>A petition for an amendment will be brought to MANGOS officers who will add the proposed amendment to the agenda.</li>
+        <li>Proposed amendments will be sent via electronic communication to all members in advance of the next regularly scheduled assembly.</li>
+        <li>A quorum of 50% of voting members must be present.</li>
+        <li>80% of those in attendance must vote on the amendment.</li>
+        <li>A 2/3 majority of all votes will pass or deny the amendment.</li>
+        <li>If a majority decision is not reached, members on both sides will be given opportunity to explain themselves. After rebuttals, an additional vote will take place.</li>
+        <li>If the second vote still does not produce a 2/3 majority, the officers of MANGOS will vote on the amendment, ensuring a 2/3 majority among themselves.</li>
+        <li>If the amendment is passed, the change takes effect immediately.</li>
+      </ol>
+
+      <hr>
+
+      <h2>Article XIV — On Certainty and Posterity</h2>
+      <p><strong>Section 1.</strong> "Certainty" is our orientation towards the belief that <em>what was — is for what will be.</em> When we orient towards knowing that there are absolutes (all humans must breathe, all families must eat), we lean into a Socratic method of discovery.</p>
+      <p><strong>Section 2.</strong> We do not just survive. We survive with certainty, and we survive with vitality. This is the architecture we build for those who come after us.</p>
+      <p><strong>Section 3.</strong> In an age of AI-driven content saturation, where human creators are drowned in noise, this constitution exists as signal. It is a record of what it means to be interdependent during a period of institutional pressure and cultural transformation.</p>
+      <p><strong>Section 4.</strong> We honor our mothers and fathers.</p>
+    </div>
+
+    <div class="constitution-signoff">
+      <p>Signed in good faith by the adherents of MANGOS.</p>
+      <p class="epigraph">"For a good to be god, you'll have to drop a halo."</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-connect">
+      <div class="footer-links-row">
+        <a href="https://jefferson.cloud" target="_blank" rel="noopener">Socialize</a>
+        <a href="https://richards.systems" target="_blank" rel="noopener">Decode</a>
+        <a href="https://richards.plus" target="_blank" rel="noopener">Consult</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/jefferson.cloud" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg fill="currentColor" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jefferson-richards/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg fill="currentColor" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/jeffy893" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg fill="currentColor" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://x.com/perrydime" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg fill="currentColor" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+    <p>&copy; 2026 Jefferson Richards. All rights reserved.</p>
+    <p><a href="https://jeffersonrichards.com">jeffersonrichards.com</a></p>
+  </footer>
+</body>
+</html>
