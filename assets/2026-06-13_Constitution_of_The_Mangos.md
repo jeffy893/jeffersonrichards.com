@@ -25,6 +25,7 @@ This constitution is explicitly subservient to:
 1. The Constitution of the United States of America
 2. The constitutions of the states and provinces in which we claim residency
 3. The Charter of Rights and Freedoms (for Canadian adherents)
+4. The Constitución Política de los Estados Unidos Mexicanos (for Mexican adherents)
 
 For situations not addressed by the above or by this constitution, we defer to Robert's Rules of Order.
 
