@@ -67,13 +67,15 @@ nav ul,
 nav .nav-sections {
   list-style: none;
   display: flex;
-  gap: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0;
   align-items: center;
 }
 
 nav .nav-sections li {
   position: relative;
-  padding: 0 1rem;
+  padding: 0 0.75rem;
 }
 
 nav .nav-sections li:not(:last-child)::after {
@@ -91,10 +93,10 @@ nav .nav-sections li:not(:last-child)::after {
 
 nav .nav-sections li a {
   font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 0.35rem 0.5rem;
+  padding: 0.35rem 0.4rem;
   border-radius: 6px;
   transition: color 0.2s, background 0.2s;
 }
