@@ -75,7 +75,7 @@ nav .nav-sections {
 
 nav .nav-sections li {
   position: relative;
-  padding: 0 0.75rem;
+  padding: 0 0.45rem;
 }
 
 nav .nav-sections li:not(:last-child)::after {
@@ -93,10 +93,10 @@ nav .nav-sections li:not(:last-child)::after {
 
 nav .nav-sections li a {
   font-weight: 600;
-  font-size: 0.8rem;
-  letter-spacing: 0.03em;
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  padding: 0.35rem 0.4rem;
+  padding: 0.35rem 0.3rem;
   border-radius: 6px;
   transition: color 0.2s, background 0.2s;
 }
@@ -114,6 +114,21 @@ nav .nav-sections li .nav-constitution {
   font-weight: 800;
 }
 
+nav .nav-sections li .nav-story {
+  background: linear-gradient(135deg, #b8860b 0%, #d9731a 50%, #b4441c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+nav .nav-sections li .nav-story:hover,
+nav .nav-sections li .nav-story:focus {
+  background: linear-gradient(135deg, #b8860b 0%, #d9731a 50%, #b4441c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.8;
+}
 nav .nav-sections li .nav-constitution:hover,
 nav .nav-sections li .nav-constitution:focus {
   background: linear-gradient(135deg, #0a66c2 0%, #7b1fa2 50%, #e91e63 100%);
